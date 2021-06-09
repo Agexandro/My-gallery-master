@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+main {
+    margin: 0 auto;
+    padding: 0 10% 10% ;
+}
+
+.photo1 {grid-area: photo1;}
+.photo2 {grid-area: photo2;}
+.photo3 {grid-area: photo3;}
+.photo4 {grid-area: photo4;}
+.photo5 {grid-area: photo5;}
+.photo6 {grid-area: photo6;}
+
+.photos {
+    grid-gap: 3%;
+    display: grid;
+    grid-template-areas: 
+    'photo1 photo1 photo2 photo2 photo2 photo2'
+    'photo3 photo3 photo3 photo3 photo4 photo4'
+    'photo5 photo5 photo6 photo6 photo4 photo4';
+}
+
+.photos > div {
+    text-align: center;
+    font-size: 30px;
+}
+
+.photos img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.profile {
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.photo img {
+    width: 140px;
+    border-radius: 16px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+}
+
+.info > div {
+    width: 130px;
+    margin: 20px;
+    padding: 10px 30px;
+    background: #E5E5E5;
+    border-radius: 12px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #4E5150;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 6;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A9A9;
+}
+
+.number {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #4E5150;
+}
+
+.desc {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #BDBDBD;
+}
+
+@media only screen and (max-width:560px) {
+    *{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    h2 {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .photo img {
+        width: 110px;
+    }
+
+    .info, .info > div{
+        margin: 2%;
+        padding: 2%;
+    }
+
+    .number, .desc {
+        font-size: 12px;
+    }
+
+    .profile {
+        margin: 10px;
+    }
+    
+}
+
+footer {
+    text-align: center;
+    clear: both;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #B9BDCF;
+    padding: 40px;
+}
